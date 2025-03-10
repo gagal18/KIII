@@ -10,7 +10,6 @@ output_file="./Homework-02/readme.md"
 cmd="$1"
 
 echo "### \`$cmd\`" >> $output_file
-echo "" >> $output_file
 echo '```console' >> $output_file
 $cmd >> $output_file 2>&1
 echo '```' >> $output_file
