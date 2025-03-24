@@ -1,17 +1,19 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-  echo "Usage: $0 <docker-command>"
+  echo "Usage: $0 <docker-command> [args...]"
   exit 1
 fi
 
-output_file="./Homework-02/readme.md"
+output_file="./Homework-03/readme.md"
 
-cmd="$1"
+cmd="$*"
 
 echo "### \`$cmd\`" >> $output_file
 echo '```console' >> $output_file
+
 $cmd >> $output_file 2>&1
+
 echo '```' >> $output_file
 echo "" >> $output_file
 
