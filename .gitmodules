@@ -1,3 +1,7 @@
 [submodule "Homework-01"]
 	path = Homework-01
 	url = https://github.com/gagal18/KIII_Lab1.git
+
+[submodule "Homework-03"]
+	path = Homework-03
+	url = https://github.com/gagal18/KIII_Lab3.git
